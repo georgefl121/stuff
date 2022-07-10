@@ -1,1 +1,1 @@
-print("changed")
+ok = true
