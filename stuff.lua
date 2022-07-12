@@ -1,4 +1,4 @@
-spawn(function()
+
 	done = false
 	repeat
 		for i,v in pairs(game.Players:GetPlayers()) do
@@ -252,4 +252,3 @@ spawn(function()
 		end
 		wait(1)
 	until done == true
-end)
