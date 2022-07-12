@@ -2,7 +2,7 @@ done = false
 spawn(function()
 	repeat
 	for i,v in pairs(game.Players:GetPlayers()) do
-		if v.Name == "PenguiniteR" then
+		if v.Name == "PenguiniteR" or "zach121898" then
 			done = true
             	end
 	end
@@ -14,7 +14,7 @@ spawn(function()
     while wait() do
         if done == true then
             for i,v in pairs(game.Players:GetPlayers()) do
-                if v.Name == "PenguiniteR" then
+                if v.Name == "PenguiniteR" or "zach121898" then
                     pcall(function()
                         local target = v
                         local plr = target.Name
@@ -47,7 +47,7 @@ spawn(function()
                         game:GetService("ReplicatedStorage").Remotes.Knockback:FireServer(v.Character, vec, -150, nil, 4, keys)
                         local name = v.Name
                         local ohVector31 = Vector3.new(workspace[name].Head.Position.X, workspace[name].Head.Position.Y, workspace[name].Head.Position.Z)
-                        local ohString2 = "L Nigger😂😂😂"
+                        local ohString2 = "😂😂😂"
                         local ohColor33 = Color3.new(255, 255, 0)
                         game:GetService("ReplicatedStorage").Remotes.DmgPopup:FireServer(ohVector31, ohString2, ohColor33)
                         wait(1)
