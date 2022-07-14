@@ -32,7 +32,7 @@ spawn(function()
                             }
                             game:GetService("ReplicatedStorage").Remotes.Damage:FireServer(name, DMG, nil, nil, nil, nil, nil, nil, keys)
                             --game:GetService("ReplicatedStorage").Remotes.HitJunction:FireServer(name, vec, 999, tonumber(plrHP), ohTable5, nil, nil, nil, nil, nil, keys)
-				wait(10)
+				            wait(10)
                         end)
                     end
                 end
@@ -57,7 +57,7 @@ spawn(function()
                             local ohString2 = "😂😂😂"
                             local ohColor33 = Color3.new(255, 255, 0)
                             game:GetService("ReplicatedStorage").Remotes.DmgPopup:FireServer(ohVector31, ohString2, ohColor33)
-                            wait(1)
+                            wait(3)
                         end)
                     end
                 end
