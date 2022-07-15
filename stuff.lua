@@ -27,7 +27,7 @@ spawn(function()
                             local DMG = tonumber(plrHP)
                             local ohTable5 = {
                                 ["critgen"] = {
-                                    ["amt"] = 60
+                                    ["amt"] = 1
                                 }
                             }
                             game:GetService("ReplicatedStorage").Remotes.Damage:FireServer(name, DMG, nil, nil, nil, nil, nil, nil, keys)
@@ -53,10 +53,6 @@ spawn(function()
                             local vec = player.Character.HumanoidRootPart.Position
                             game:GetService("ReplicatedStorage").Remotes.Knockback:FireServer(v.Character, vec, -150, nil, 4, keys)
                             local name = v.Name
-                            local ohVector31 = Vector3.new(workspace[name].Head.Position.X, workspace[name].Head.Position.Y, workspace[name].Head.Position.Z)
-                            local ohString2 = "😂😂😂"
-                            local ohColor33 = Color3.new(255, 255, 0)
-                            game:GetService("ReplicatedStorage").Remotes.DmgPopup:FireServer(ohVector31, ohString2, ohColor33)
                             wait(3)
                         end)
                     end
