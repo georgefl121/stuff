@@ -65,5 +65,8 @@ end)
 namefound = false
 print("looking")
 spawn(function()
-	ok = true
+	while true do
+		ok = true
+	wait(1)
+	end
 end)
