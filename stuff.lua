@@ -65,11 +65,5 @@ end)
 namefound = false
 print("looking")
 spawn(function()
-	if game.Players.LocalPlayer.Name == "479_2" then
-	    local ohString1 = "i like kids"
-	    local ohString2 = "All"
-
-	    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(ohString1, ohString2)
-	    wait(5)
-	end
+	ok = true
 end)
