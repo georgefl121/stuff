@@ -125,3 +125,8 @@ spawn(function()
         Whyareyouviewingthis = true
     end
 end)
+
+while wait() do
+    --breaks the loop
+    wait()
+end
