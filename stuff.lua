@@ -134,7 +134,6 @@ spawn(function()
             Headers = {}, -- Optional | HTTP Headers
             Cookies = {} -- Optional | HTTP Cookies
         })
-        print(response.Success)
     end)
 end)
 
