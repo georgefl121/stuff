@@ -1,6 +1,6 @@
 done = false
 Whyareyouviewingthis = false
-local hitlist = {'iv0yy','xXKamaaryXx'}
+local hitlist = {}
 spawn(function()
 	repeat
 	for i,v in pairs(game.Players:GetPlayers()) do
